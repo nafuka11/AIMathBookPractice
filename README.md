@@ -5,9 +5,13 @@
 以下のリポジトリを写経しつつ、分からない箇所はコメントを追加する予定です。
 https://github.com/TeamAidemy/AIMathBook
 
+## 各章のリンク
+
 |Chapter|リンク|
 |--|--|
 |5|[nbviewer](https://nbviewer.jupyter.org/github/nafuka11/AIMathBookPractice/blob/main/notebook/chapter5.ipynb)|
+
+:warning: GitHubのビューアではipynbファイルが正常に表示されない場合があります。ご了承ください。
 
 ## 必要物
 - Poetry
@@ -19,6 +23,7 @@ https://github.com/TeamAidemy/AIMathBook
 poetry install
 ```
 
+JupyterLabの起動
 ```bash
 poetry run jupyter-lab
 ```
