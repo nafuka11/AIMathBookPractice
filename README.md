@@ -9,7 +9,8 @@ https://github.com/TeamAidemy/AIMathBook
 
 |Chapter|リンク|
 |--|--|
-|5|[nbviewer](https://nbviewer.jupyter.org/github/nafuka11/AIMathBookPractice/blob/main/notebook/chapter5.ipynb)|
+|5|[nbviewer](https://nbviewer.jupyter.org/github/nafuka11/AIMathBookPractice/blob/main/chapter5/chapter5.ipynb)|
+|6|[nbviewer](https://nbviewer.jupyter.org/github/nafuka11/AIMathBookPractice/blob/main/chapter6/chapter6.ipynb)|
 
 :warning: GitHubのビューアではipynbファイルが正常に表示されない場合があります。ご了承ください。
 
