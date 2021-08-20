@@ -16,6 +16,7 @@ https://github.com/TeamAidemy/AIMathBook
 ## 必要物
 - Poetry
 - Python >= 3.8
+- [MeCab](http://taku910.github.io/mecab/)
 
 ## 実行方法
 必要なパッケージのインストール
