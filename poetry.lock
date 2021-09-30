@@ -149,6 +149,25 @@ optional = false
 python-versions = ">=2.7"
 
 [[package]]
+name = "gensim"
+version = "4.1.0"
+description = "Python framework for fast Vector Space Modelling"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+numpy = ">=1.17.0"
+scipy = ">=0.18.1"
+smart-open = ">=1.8.1"
+
+[package.extras]
+distributed = ["Pyro4 (>=4.27)"]
+docs = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)", "pyemd", "nmslib", "Pyro4 (>=4.27)", "visdom (>=0.1.8,!=0.1.8.7)", "sphinx", "sphinx-gallery", "sphinxcontrib.programoutput", "sphinxcontrib-napoleon", "matplotlib", "memory-profiler", "annoy", "pyro4", "nltk", "statsmodels", "pandas"]
+test = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)", "pyemd", "nmslib", "visdom (>=0.1.8,!=0.1.8.7)"]
+test-win = ["pytest", "mock", "cython", "testfixtures", "Morfessor (>=2.0.2a4)", "pyemd", "nmslib"]
+
+[[package]]
 name = "idna"
 version = "3.2"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -833,6 +852,23 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
+name = "smart-open"
+version = "5.2.1"
+description = "Utils for streaming large files (S3, HDFS, GCS, Azure Blob Storage, gzip, bz2...)"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+
+[package.extras]
+all = ["boto3", "google-cloud-storage", "azure-storage-blob", "azure-common", "azure-core", "requests"]
+azure = ["azure-storage-blob", "azure-common", "azure-core"]
+gcs = ["google-cloud-storage"]
+http = ["requests"]
+s3 = ["boto3"]
+test = ["boto3", "google-cloud-storage", "azure-storage-blob", "azure-common", "azure-core", "requests", "moto[server] (==1.3.14)", "pathlib2", "responses", "paramiko", "parameterizedtestcase", "pytest", "pytest-rerunfailures"]
+webhdfs = ["requests"]
+
+[[package]]
 name = "sniffio"
 version = "1.2.0"
 description = "Sniff out which async library your code is running under"
@@ -924,7 +960,7 @@ python-versions = ">=3.6"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "0d4a9931b297170eb586d5e953fb5f4b2685952d5f38e2a59fa944aa8ca985ca"
+content-hash = "fa32f41efd2c6df454676f1f9588ba8dad7a42c12e2be88077d7febd1d705a83"
 
 [metadata.files]
 anyio = [
@@ -1049,6 +1085,25 @@ defusedxml = [
 entrypoints = [
     {file = "entrypoints-0.3-py2.py3-none-any.whl", hash = "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19"},
     {file = "entrypoints-0.3.tar.gz", hash = "sha256:c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451"},
+]
+gensim = [
+    {file = "gensim-4.1.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:504c129224953f75940402143ecce1383be0784ea89912042c7b7e1e1107cbbc"},
+    {file = "gensim-4.1.0-cp36-cp36m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:932a3d372d4b795ce56efbec8f7b074e8c97a043e2f846b2f721a76c5cc80cc3"},
+    {file = "gensim-4.1.0-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9866744a57e6001dd8115328bc7e306fedc746e37e8d1720f3811b5e76359e67"},
+    {file = "gensim-4.1.0-cp36-cp36m-win_amd64.whl", hash = "sha256:093415811d56af0f70cd8ed51ef21f927937dc59ed7b341a5b5ebb887906851a"},
+    {file = "gensim-4.1.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:28f6e97d9a6bb32c44c53602d990a12e9fd199719c46f89f9221fe6cb6109bcd"},
+    {file = "gensim-4.1.0-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:068a4bc698f3b2844609dcb8f693b033d81c9d03f82ffd56d80a62fecc9347e9"},
+    {file = "gensim-4.1.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:f6c4c8bf0c07d1f05f1c718fbc88e85eced222ceba03216eb6e5763098e8c2da"},
+    {file = "gensim-4.1.0-cp37-cp37m-win_amd64.whl", hash = "sha256:344ca542b7d8aca249ac3b4ad952f5c360341d4656cb0d25f9893a68ed4fd473"},
+    {file = "gensim-4.1.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:eb577ec45ef72cc213e8e1301b251a6b5798e51f5085f88a0b5527d281acbcec"},
+    {file = "gensim-4.1.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:96a4bae3e7523a9e28049e0b85b9e8525924f6ae9313467734556afecf120bb9"},
+    {file = "gensim-4.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:d2dee416383591b4fef9cdf3810f9818a2de4af5e588133822e2629a0ed2dc79"},
+    {file = "gensim-4.1.0-cp38-cp38-win_amd64.whl", hash = "sha256:382c821e256040c9763d8ae356d851bbc58590bc45aa8c70ee067f037349e3b3"},
+    {file = "gensim-4.1.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:905617489a72bd51c7cf516db0defb4d6c04d500a0b054976e816df7f7397a90"},
+    {file = "gensim-4.1.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:57c3b947b352e0637d810a5651db568e61844617ff07fec5fb56d55275b04578"},
+    {file = "gensim-4.1.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b9a37a941d3b618520225f0f3e1ea2e2c1971385cca1d740db707c10421a7319"},
+    {file = "gensim-4.1.0-cp39-cp39-win_amd64.whl", hash = "sha256:1f3f37b2836d00b92e75f33695ee0c901286b71ced325e3e7510918e06b8144e"},
+    {file = "gensim-4.1.0.tar.gz", hash = "sha256:0b09983048a97c7915ab50500bc53eeec438d26366041598709ec156db3eef1f"},
 ]
 idna = [
     {file = "idna-3.2-py3-none-any.whl", hash = "sha256:14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a"},
@@ -1524,6 +1579,10 @@ send2trash = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+smart-open = [
+    {file = "smart_open-5.2.1-py3-none-any.whl", hash = "sha256:71d14489da58b60ce12fc3ecb823facc59a8b23cd1b58edb97175640350d3a62"},
+    {file = "smart_open-5.2.1.tar.gz", hash = "sha256:75abf758717a92a8f53aa96953f0c245c8cedf8e1e4184903db3659b419d4c17"},
 ]
 sniffio = [
     {file = "sniffio-1.2.0-py3-none-any.whl", hash = "sha256:471b71698eac1c2112a40ce2752bb2f4a4814c22a54a3eed3676bc0f5ca9f663"},
